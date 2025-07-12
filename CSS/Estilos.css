@@ -1,0 +1,38 @@
+body{
+    background-image: url(../IMG/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    
+}
+
+
+.shadow{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.600);
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -100;
+}
+.content{
+    background-color: white;
+    max-width: 50vw;
+    margin: auto;
+}
+.inv-system{
+    display: none;
+    
+}
+.app{
+    display: none;
+}
+
+.aboutme{
+    display: flex;
+}
+.projects{
+    display:none;
+}
+.skills{
+    display: none;
+}

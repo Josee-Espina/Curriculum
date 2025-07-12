@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="scss/Estilos.css" />
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <div class="shadow">
+      <div class="content mt-5 rounded border border-1 p-4 ">
+
+        <!-- NAV-->
+         <div class="d-flex justify-content-center">
+
+             <nav class="navbar navbar-expand-lg bg-body rounded mb-2 border border-1 d-inline-block p-2">
+                 <div class="container-fluid">
+</div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav gap-2">
+        <li class="nav-item">
+            <button class="btn border border-1 bg nav-btn abme btn-success">Sobre mi</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn border border-1 bg nav-btn prj">Proyectos</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn border border-1 bg nav-btn skl">Habilidades</button>
+        </li>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+        <!-- Carta:sobre mi-->
+         
+        <div class="justify-content-center aboutme">
+        <div class="card" style="width: 10rem;">
+          <img src="IMG/Aboutme.jpg" class="card-img-top rounded-circle p-2"/>
+          <div class="card-body bg bg-white">
+            <h5 class="card-title">Sobre mi</h5>
+            <p class="card-text fs-7">
+               Ingenierio De Sistemas graduado en la UNEFA 2020-2025.Siempre tengo la mejor disposición para la realización de mi trabajo
+            </p>
+          </div>
+        </div>
+</div>
+
+<!-- proyectos-->
+ <div class="projects mt-3">
+<div class="d-flex justify-content-center gap-2 mb-2">
+
+
+<button class="btn border border-1" id="invbutton">Sistema de inventario</button>
+<button class="btn border border-1" id="appbutton">Aplicacion de verificacion</button>
+</div>
+
+<div class="inv-system">
+
+    <p class=" border border-1 rounded p-2 text-center">RESUMEN:Sistema de Invetarios con las funciones de control de usuarios,reportes,historial,control de usuarios y respaldo</p>
+    <video src="../Video/Inventario.mp4" class="w-100 h-100 rounded border border-black border-2 p-1" autoplay muted controls></video>
+      <a href="https://github.com/Josee-Espina/Inv-system" target="_blank">Codigo fuente</a>
+</div>
+<div class="app">
+  
+  <p class=" border border-1 rounded p-2 text-center">RESUMEN:Prototipo de aplicacion movil para la verificacion y control de carnets</p>
+  <div class="d-flex justify-content-center"><video src="../Video/app.mp4" class="w-25 h-50 rounded border border-black border-2 p-1" autoplay muted controls></video></div>
+  <a href="https://github.com/Josee-Espina/Prototipo--appVerificacion" target="_blank">Codigo fuente</a>
+</div>
+</div>
+
+
+
+<div class="skills mt-5">
+  <ul>
+    <li class="text-primary">Programador especilizado en el desarrollo web de BackEnd. JS,PHP,HTML,CSS</li>
+    <li class="text-success">Conocimientos en hardware de equipos computacionales</li>
+  </ul>
+
+</div>
+
+
+
+</div>
+
+      </div>
+    </div>
+
+
+
+
+  <!-- scripts-->
+    <script src="JS/Funciones.js"></script>
+
+  </body>
+</html>
