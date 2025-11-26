@@ -1,5 +1,4 @@
-import { Project } from "./Project/project";
-
+import { Project } from "./../Project/project";
 export function Projects() {
   return (
     <div className="flex bg-base-300 justify-center">

@@ -1,3 +1,5 @@
+import JoseImage from "../images/Jose.png";
+
 export function Me() {
   return (
     <div
@@ -5,7 +7,7 @@ export function Me() {
       id="Start"
     >
       <img
-        src="../../public/images/Jose.png"
+        src={JoseImage}
         alt=""
         className="select-none object-contain w-30 mask-radial-from-60% mask-radial-to-70% mask-radial-at-center pt-5"
       />
