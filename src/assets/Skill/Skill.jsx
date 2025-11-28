@@ -11,6 +11,8 @@ export function Skill({ icon, color, tittle, desc }) {
       indigo: "from-indigo-900 via-indigo-700 to-indigo-500",
       emerald: "from-emerald-900 via-emerald-700 to-emerald-500",
       sky: "from-sky-900 via-sky-700 to-sky-500",
+      red: "from-red-900 via-red-700 to-red-500",
+      green: "from-green-900 via-green-700 to-green-500",
     }[color] || "bg-gray-200";
 
   const bgClass = {
@@ -23,18 +25,20 @@ export function Skill({ icon, color, tittle, desc }) {
     indigo: "bg-indigo-500",
     emerald: "bg-emerald-500",
     sky: "bg-sky-500",
+    red: "bg-red-500",
+    green: "bg-green-500",
   }[color];
   return (
     <div
-      className={`relative flex flex-col w-1/3 max-[600px]:w-1/2 overflow-hidden  
+      className={`relative flex flex-col w-1/3 max-[800px]:w-11/12 overflow-hidden  
       flex-wrap rounded-2xl 
       transition  duration-150 ease-in-out active:-translate-y-1 active:scale-105 min-[600px]:hover:-translate-y-1 min-[600px]:hover:scale-105 
       bg-linear-to-br ${colorClass}`}
     >
       <div
-        className={`w-1/2 rounded-xl mt-0.5 border border-solid border-white inline-flex  overflow-auto ${bgClass}`}
+        className={`w-1/3 rounded-xl mt-0.5 border border-solid border-white inline-flex  overflow-auto ${bgClass} max-[600px]:w-2/3`}
       >
-        <p className="ml-2 text-xl font-bold">{tittle}</p>
+        <p className="ml-2 text-xl font-bold max-[600px]:text-wrap">{tittle}</p>
       </div>
       <div className="p-2 w-11/12">{desc}</div>
       <div className="absolute -right-5 top-0 ">{icon}</div>

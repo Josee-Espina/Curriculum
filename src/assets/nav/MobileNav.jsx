@@ -3,7 +3,7 @@ import { IoIosMenu } from "react-icons/io";
 import { ThemeController } from "./ThemeController";
 export function MobileNav() {
   return (
-    <div className="max-[600px]:flex hidden  items-center ">
+    <div className="max-[600px]:flex hidden  items-center animate-ping animate-once animate-ease-in animate-reverse ">
       <ThemeController />
       <div className="dropdown dropdown-center m-auto">
         <div tabIndex={0} role="button" className="btn m-1">

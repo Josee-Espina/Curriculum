@@ -6,8 +6,9 @@ import {
   FaJs,
   FaPhp,
   FaDatabase,
+  FaNodeJs,
 } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiLaravel } from "react-icons/si";
 
 import { DiAndroid } from "react-icons/di";
 export function Skills() {
@@ -43,22 +44,6 @@ export function Skills() {
           }
         />
         <Skill
-          icon={<FaPhp size={64} />}
-          color="purple"
-          tittle={"PHP"}
-          desc={
-            "Lenguaje de scripting del lado del servidor ampliamente utilizado para desarrollo web. Ideal para crear aplicaciones web dinámicas y conectarse con bases de datos."
-          }
-        />
-        <Skill
-          icon={<FaDatabase size={64} />}
-          color="indigo"
-          tittle={"SQL Databases"}
-          desc={
-            "Sistemas de gestión de bases de datos relacionales para almacenar y organizar datos de manera estructurada. Incluye MySQL, PostgreSQL y otros sistemas SQL."
-          }
-        />
-        <Skill
           icon={<FaReact size={64} />}
           color="cyan"
           tittle={"React"}
@@ -66,6 +51,23 @@ export function Skills() {
             "Biblioteca de JavaScript para construir interfaces de usuario interactivas y eficientes, basada en componentes reutilizables y un sistema de renderizado reactivo."
           }
         />
+        <Skill
+          icon={<FaDatabase size={64} />}
+          color="indigo"
+          tittle={"SQL Databases"}
+          desc={
+            "Sistemas de gestión de bases de datos relacionales para almacenar y organizar datos de manera estructurada."
+          }
+        />
+        <Skill
+          icon={<FaPhp size={64} />}
+          color="purple"
+          tittle={"PHP"}
+          desc={
+            "Lenguaje de scripting del lado del servidor ampliamente utilizado para desarrollo web. Ideal para crear aplicaciones web dinámicas y conectarse con bases de datos."
+          }
+        />
+
         <Skill
           icon={<DiAndroid size={64} />}
           color="emerald"
@@ -84,14 +86,40 @@ export function Skills() {
         />
       </div>
       {/*soft skills*/}
-      <div className=" flex flex-col">
-        <h4 className="text-center font-bold">Habilidades blandas</h4>
-        <p className="w-1/2 text-center m-auto text-pretty">
+      <div className=" flex flex-col mt-4 bg-base-300 p-2">
+        <h4 className="text-center font-bold text-2xl">Habilidades blandas</h4>
+        <p className="w-11/12 text-center m-auto text-pretty mb-2">
           Me considero a mi mismo como una persona responsable y proactiva con
           la capacidad de resolver problemas y proponer soluciones,interactuar y
-          trabajar con las personas de mi interno sin ningun problema ,adaptarme
+          trabajar con las personas de mi entorno sin ningun problema ,adaptarme
           rapidamente y aprender segun las circunstancias
         </p>
+      </div>
+      <div className="flex flex-wrap flex-col  items-center gap-1 mt-2">
+        <h5 className="text-xl font-bold">En la Actualidad</h5>
+        <p className="w-11/12 text-center m-auto text-pretty mb-2">
+          En el presente continuo expandiendo mis habilidades como programador y
+          en el futuro cercano me gustaria aprender tecnologias como
+        </p>
+        <div className="flex justify-center gap-5 max-[600px]:flex-col items-center pb-3">
+          <Skill
+            icon={<SiLaravel size={64} />}
+            color="red"
+            tittle={"Laravel"}
+            desc={
+              "Framework de PHP elegante y expresivo para el desarrollo web. Ofrece una sintaxis rica y herramientas poderosas para crear aplicaciones robustas y mantenibles."
+            }
+          />
+
+          <Skill
+            icon={<FaNodeJs size={64} />}
+            color="green"
+            tittle={"Node.js"}
+            desc={
+              "Entorno de ejecución de JavaScript del lado del servidor. Permite construir aplicaciones backend escalables y de alto rendimiento usando el mismo lenguaje que el frontend."
+            }
+          />
+        </div>
       </div>
     </>
   );
