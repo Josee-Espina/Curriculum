@@ -24,6 +24,13 @@ export function Projects() {
           codeURL="https://github.com/Josee-Espina/Curriculum"
           video={false}
         />
+        <Project
+          URLcontent="https://www.youtube.com/embed/BXere_uENkE"
+          title="Minijuego de tocar la pantalla"
+          desc="Juego sencillo creado para dispositivos moviles en React Native"
+          codeURL="https://github.com/Josee-Espina/Tap-game"
+          video={true}
+        />
       </div>
     </>
   );
