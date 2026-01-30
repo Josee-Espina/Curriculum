@@ -13,6 +13,9 @@ export function Skill({ icon, color, tittle, desc }) {
       sky: "from-sky-900 via-sky-700 to-sky-500",
       red: "from-red-900 via-red-700 to-red-500",
       green: "from-green-900 via-green-700 to-green-500",
+      gray: "from-gray-900 via-gray-700 to-gray-500",
+        teal: "from-teal-900 via-teal-700 to-teal-500",
+      black: "from-gray-900 via-gray-800 to-gray-700",
     }[color] || "bg-gray-200";
 
   const bgClass = {
@@ -26,7 +29,8 @@ export function Skill({ icon, color, tittle, desc }) {
     emerald: "bg-emerald-500",
     sky: "bg-sky-500",
     red: "bg-red-500",
-    green: "bg-green-500",
+    green: "bg-green-500", 
+  
   }[color];
   return (
     <div

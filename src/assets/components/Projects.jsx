@@ -31,6 +31,13 @@ export function Projects() {
           codeURL="https://github.com/Josee-Espina/Tap-game"
           video={true}
         />
+         <Project
+          URLcontent="https://www.youtube.com/embed/xV__rBf5m-E"
+          title="Modificar Excel con IA"
+          desc="Aplicacion web creada con React y NodeJS para el lado del servidor para modificar archivos de excel con la IA de gemini"
+          codeURL="https://github.com/Josee-Espina/XLSX-AI"
+          video={true}
+        />
       </div>
     </>
   );

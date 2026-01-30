@@ -7,8 +7,10 @@ import {
   FaPhp,
   FaDatabase,
   FaNodeJs,
+  FaPython
 } from "react-icons/fa";
-import { SiTailwindcss, SiLaravel } from "react-icons/si";
+
+import { SiTailwindcss, SiLaravel,SiN8N,SiNextdotjs,SiMongodb } from "react-icons/si";
 
 import { DiAndroid } from "react-icons/di";
 export function Skills() {
@@ -84,6 +86,22 @@ export function Skills() {
             "Framework de CSS utilitario para crear diseños personalizados rápidamente. Con clases de utilidad que permiten construir interfaces modernas y responsive sin escribir CSS personalizado."
           }
         />
+         <Skill
+            icon={<FaNodeJs size={64} />}
+            color="green"
+            tittle={"Node.js"}
+            desc={
+              "Entorno de ejecución de JavaScript del lado del servidor. Permite construir aplicaciones backend escalables y de alto rendimiento usando el mismo lenguaje que el frontend."
+            }
+          />
+           <Skill
+          icon={<SiN8N size={64} />}
+          color="red"
+          tittle={"n8n"}
+          desc={
+            "Plataforma de automatización de flujos de trabajo de código abierto. Permite conectar diferentes aplicaciones y servicios para crear automatizaciones complejas sin código o con bajo código."
+          }
+        />
       </div>
       {/*soft skills*/}
       <div className=" flex flex-col mt-4 bg-base-300 p-2">
@@ -101,7 +119,7 @@ export function Skills() {
           En el presente continuo expandiendo mis habilidades como programador y
           en el futuro cercano me gustaria aprender tecnologias como
         </p>
-        <div className="flex justify-center gap-5 max-[600px]:flex-col items-center pb-3">
+        <div className="flex flex-wrap justify-center gap-5 max-[600px]:flex-col items-center pb-3">
           <Skill
             icon={<SiLaravel size={64} />}
             color="red"
@@ -110,15 +128,32 @@ export function Skills() {
               "Framework de PHP elegante y expresivo para el desarrollo web. Ofrece una sintaxis rica y herramientas poderosas para crear aplicaciones robustas y mantenibles."
             }
           />
+           <Skill
+          icon={<SiNextdotjs size={64} />}
+          color="black"
+          tittle={"Next.js"}
+          desc={
+            "Framework de React para producción que habilita características como renderizado del lado del servidor (SSR), generación de sitios estáticos (SSG) y enrutamiento del sistema de archivos."
+          }
+        />
+        <Skill
+          icon={<FaPython size={64} />}
+          color="teal"
+          tittle={"Python"}
+          desc={
+            "Lenguaje de programación versátil y de alto nivel utilizado en desarrollo web, ciencia de datos, inteligencia artificial y automatización. Conocido por su sintaxis clara y legible."
+          }
+        />
+         <Skill
+          icon={<SiMongodb size={64} />}
+          color="green"
+          tittle={"MongoDB"}
+          desc={
+            "Base de datos NoSQL orientada a documentos. Utiliza JSON-like documents con esquemas dinámicos, ideal para aplicaciones escalables y de alto rendimiento con datos no estructurados."
+          }
+        />
 
-          <Skill
-            icon={<FaNodeJs size={64} />}
-            color="green"
-            tittle={"Node.js"}
-            desc={
-              "Entorno de ejecución de JavaScript del lado del servidor. Permite construir aplicaciones backend escalables y de alto rendimiento usando el mismo lenguaje que el frontend."
-            }
-          />
+         
         </div>
       </div>
     </>
